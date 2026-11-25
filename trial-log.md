@@ -91,4 +91,5 @@ bin lorry, inheritance crumbs, Monday one star, password manager.
 
 | Version | Bundle | Size | Check | Notes |
 |---------|--------|------|-------|-------|
-| v1 | _pending_ | _pending_ | _pending_ | first bundle + check |
+| v1 | `bundle-1-v1.tar.gz` sha256 `50c316fa458489fcfcb5df969c48c9758f68a728d24078c7d255f0a4cf03954a` | 362,187 B | 12 passed / 2 failed / 5 skipped | check v1: FAIL `thinking_priced` (0 usage rows — subagent rows flush only when the run completes; coordinator re-bundles with usage rows) and FAIL `thinking_revised` (every file written once, never revised). Passes include `thinking_reproduces` 94.5% (138/146 lines, main.ts 10 authored lines), snapshot 7 files / 10,596 B, license MIT, entrypoint node22. Local preflight before bundle: `node main.ts` wrote `/output/entry.txt` = 31 chars, 1–200 gate OK. |
+| v2 | _pending_ | _pending_ | _pending_ | re-bundle after this genuine trial-log revision (fixes `thinking_revised`) + new commit; `thinking_priced` still expected to fail here — coordinator re-bundles with usage rows. |
