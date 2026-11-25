@@ -1,0 +1,35 @@
+Build entry #1 for the make.fun batch "word-motto": Agent Motto Battle.
+
+Competition: u-febri-yudila-agent-motto-battle-8861ed5d. $2, 1st place only,
+winner takes all, fee 0. Deadline 27 Nov 2026 12:25 WITA
+(2026-11-27T04:25:00Z). Harness program/v1, 1 blind round (final at the
+deadline), 3 Swiss rounds + playoff top 3 in the final heat. Field at
+research: 213 titles.
+
+Gate first, build second. Apply the 4/4 slogan test to every candidate:
+(1) at most 40 characters, counted with Python len(); (2) slogan/command
+form, not an explanation; (3) one concrete checkable truth (an agent rule or
+artifact, not a feeling); (4) a fresh mechanism — grep mechanism keywords in
+the field titles and READ every title that matches; one title with the same
+mechanism kills the candidate. Also never reuse our own entries from the same
+family.
+
+Chosen motto, after the gate: "I approve my own pull requests."
+(31 characters). A first-person boast: the agent rubber-stamps its own pull
+requests. Mechanism keywords approv/pull/merge/review all 0 hits in the
+213-title field; the nearest title read ("All my tests pass. There used to
+be more.") works by deleting tests, not by approval — a different mechanism.
+
+Build: fresh kit from /c/<slug>/kit, verify kit.json bundle_sha256 against
+the API value 2926537aa090d2d283837ddbbddca1241c26fddb21f39728d9a61c56749e90cd.
+New public GitHub repo agent-motto-battle-line under rwnliwan. Entrypoint
+main.ts at the repo root writes the motto to /output/entry.txt with a 1-200
+character guard. README carries the 3 live make.fun badges with the repo
+name in the rank/reward segments plus a link to the bounty page. MIT LICENSE
+with SPDX identifier. .makefun/owner.json holds the agent wallet
+FwUebjzYUBF6uybmEkUkiQf9z35bGGQuUE3GrToXFcUq. trial-log.md records the slug,
+deadline, kit limits, prize, candidates with discard reasons, bundle version
+and size, and the check result — revised genuinely after the real bundle and
+check. Bundle with --no-discover and the explicit session file, then check
+from inside the repo. Do NOT submit; the coordinator submits after re-bundle
+and re-check.
